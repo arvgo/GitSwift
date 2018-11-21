@@ -12,6 +12,9 @@
 		09D921E921A6167700782542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D921E721A6167700782542 /* Main.storyboard */; };
 		09D921EB21A6167800782542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D921EA21A6167800782542 /* Assets.xcassets */; };
 		09D921EE21A6167800782542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D921EC21A6167800782542 /* LaunchScreen.storyboard */; };
+		09D921F921A6171600782542 /* GitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D921F821A6171600782542 /* GitModel.swift */; };
+		09D921FD21A61ACB00782542 /* Github Vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D921FC21A61ACB00782542 /* Github Vc.swift */; };
+		09D921FF21A61B7A00782542 /* GitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D921FE21A61B7A00782542 /* GitCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		09D921EA21A6167800782542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D921ED21A6167800782542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D921EF21A6167800782542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D921F821A6171600782542 /* GitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitModel.swift; sourceTree = "<group>"; };
+		09D921FC21A61ACB00782542 /* Github Vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Github Vc.swift"; sourceTree = "<group>"; };
+		09D921FE21A61B7A00782542 /* GitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				09D921E321A6167700782542 /* AppDelegate.swift */,
-				09D921E521A6167700782542 /* ViewController.swift */,
-				09D921E721A6167700782542 /* Main.storyboard */,
+				09D921F721A616FC00782542 /* Model */,
+				09D921F521A616B400782542 /* Controller */,
+				09D921F621A616D500782542 /* Storyboards */,
 				09D921EA21A6167800782542 /* Assets.xcassets */,
-				09D921EC21A6167800782542 /* LaunchScreen.storyboard */,
 				09D921EF21A6167800782542 /* Info.plist */,
 			);
 			path = GitView;
+			sourceTree = "<group>";
+		};
+		09D921F521A616B400782542 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09D921E521A6167700782542 /* ViewController.swift */,
+				09D921FC21A61ACB00782542 /* Github Vc.swift */,
+				09D921FE21A61B7A00782542 /* GitCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09D921F621A616D500782542 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				09D921EC21A6167800782542 /* LaunchScreen.storyboard */,
+				09D921E721A6167700782542 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		09D921F721A616FC00782542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09D921F821A6171600782542 /* GitModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D921E621A6167700782542 /* ViewController.swift in Sources */,
+				09D921F921A6171600782542 /* GitModel.swift in Sources */,
+				09D921FD21A61ACB00782542 /* Github Vc.swift in Sources */,
+				09D921FF21A61B7A00782542 /* GitCollectionViewCell.swift in Sources */,
 				09D921E421A6167700782542 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

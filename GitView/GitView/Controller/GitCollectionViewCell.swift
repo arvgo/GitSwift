@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+import UIKit
+
+class GitCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorImage: UIImageView!
+    @IBOutlet weak var authorName: UILabel!
+    @IBOutlet weak var dateCommit: UILabel!
+    
+}
